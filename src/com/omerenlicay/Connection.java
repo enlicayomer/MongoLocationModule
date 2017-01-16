@@ -8,13 +8,13 @@ import com.mongodb.client.MongoDatabase;
 public class Connection {
 	
 	MongoClient mongoClient;
-	DB database;
+	MongoDatabase database;
 	
 	public Connection(){
 		
 		try{
 		mongoClient=new MongoClient("localhost", 27017);
-		database=mongoClient.getDB("LBS");
+		database=mongoClient.getDatabase("LBS");
 		System.out.println("baglanti basarili.");
 		}catch(Exception e)
 		{
