@@ -7,8 +7,8 @@ import com.mongodb.client.MongoDatabase;
 
 public class Connection {
 	
-	MongoClient mongoClient;
-	MongoDatabase database;
+	static MongoClient mongoClient;
+	static MongoDatabase database;
 	
 	public Connection(){
 		
